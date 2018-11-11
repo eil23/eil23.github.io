@@ -25,7 +25,8 @@ export default {
     rules: [
       { test: /\.jsx$/, use: 'babel-loader' },
       { test: /\.vue$/, loader: 'vue-loader' },
-      { test: /\.css$/, use: [ 'vue-style-loader', 'css-loader' ] }
+      { test: /\.css$/, use: [ 'vue-style-loader', 'css-loader' ] },
+      { test: /\.(png|jpe?g)/, use: 'file-loader' }
     ]
   },
 

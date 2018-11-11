@@ -4,7 +4,6 @@
       <h3>{{ title }}</h3>
       <p>{{ description }}</p>
     </a>
-    <iframe :class='{ frame: isFullscreen, turn: !isFullscreen }' height='100vh' width='100vw' :src='location'></iframe>
   </div>
 </template>
 
@@ -22,7 +21,7 @@ export default {
         this.isFullscreen = true
 
         setTimeout(() => {
-          fullscreen(this.$refs.border)
+          fullscreen(this.$refs.border, this.location)
           .then(() => {
             this.isFullscreen = false
           })
@@ -42,13 +41,14 @@ export default {
   margin: 0.5em;
   border: solid 2px black;
   background: white;
+  transition: opacity 100ms;
 }
 
 .turn {
-  display: none;
+  opacity: 0;
 }
 
-.main {
+.border a {
   padding: 1em;
   --margin: 2px;
   width: calc(100% - var(--margin) * 2);
@@ -58,10 +58,8 @@ export default {
   display: block;
 
   color: black;
-}
-
-.main {
   text-decoration: none;
+  transition: opacity 250ms;
 }
 
 .frame {

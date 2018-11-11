@@ -1,10 +1,10 @@
 <template>
   <section>
     <div class='flexed'>
-      <Project title='Filler A' location='https://www.' description='Todo...' />
-      <Project title='Filler A' location='https://www.' description='Todo...' />
-      <Project title='Filler A' location='https://www.' description='Todo...' />
-      <Project title='Filler A' location='https://www.' description='Todo...' />
+      <Project title='Project 1' location='https://www.' description='Todo...' />
+      <Project title='Project 2' location='https://www.' description='Todo...' />
+      <Project title='Project 3' location='https://www.' description='Todo...' />
+      <Project title='Project 4' location='https://www.' description='Todo...' />
     </div>
   </section>
 </template>

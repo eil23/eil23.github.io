@@ -8,7 +8,6 @@
       <ul>
         <li><a href='#Home' v-on:click=goto>Home</a></li>
         <li><a href='#Portfolio' v-on:click=goto>Portfolio</a></li>
-        <li><a href='#Other' v-on:click=goto>Other</a></li>
       </ul>
     </nav>
   </div>
@@ -46,7 +45,7 @@ export default {
   font-family: 'K2D';
   text-align: center;
   background: white;
-  box-shadow: 0 0 2px black;
+  box-shadow: 0 0 4px black;
 }
 
 #Header h1 {
@@ -64,16 +63,13 @@ export default {
 .navigation ul {
   display: flex;
   height: 100%;
+  justify-content: center;
 
   list-style: none;
 }
 
 .navigation li {
   margin: 0 0.5em;
-}
-
-.navigation li:last-child {
-  margin-left: auto;
 }
 
 .navigation a {

@@ -33,7 +33,7 @@ export default {
 <style>
 body {
   font-size: 20px;
-  background: #EFEAEA;
+  background: linear-gradient(to right, #02aab0, #00cdac);;
 }
 
 * {
@@ -50,7 +50,7 @@ body {
   width: auto;
   box-sizing: border-box;
   background: white;
-  border: solid 2px black;
+  box-shadow: 0 0 2px black;
   font-family: 'Playfair Display';
   overflow: hidden;
 }
